@@ -18,3 +18,15 @@ export interface ProductResponse {
     skip: number;
     limit: number;
 }
+
+export interface ProductState {
+    items: Product[]
+    selectedProduct: Product | null
+    loading: Boolean
+    error: string | null
+    total: number
+    skip: number
+    limit: number
+    hasMore: boolean
+    searchQuery: string
+}

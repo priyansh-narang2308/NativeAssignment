@@ -3,21 +3,21 @@ import apiClienttt from "./apiClient";
 
 
 export const productApii = {
-    fetchProdicts: async (limit: number, skip: number): Promise<ProductResponse> => {
+    fetchProducts: async (limit: number, skip: number): Promise<ProductResponse> => {
         const resp = await apiClienttt.get<ProductResponse>("/products", {
             params: { limit, skip }
         })
         return resp.data
     },
 
-    searchhProductss: async (query: string): Promise<ProductResponse> => {
+    searchProducts: async (query: string): Promise<ProductResponse> => {
         const res = await apiClienttt.get<ProductResponse>("/products/search", {
             params: { q: query }
         })
         return res.data
     },
 
-    fetchProdiuctsById: async (id: number): Promise<any> => {
+    fetchProductById: async (id: number): Promise<any> => {
         const resp = await apiClienttt.get(`/products/${id}`)
         return resp.data
     }
