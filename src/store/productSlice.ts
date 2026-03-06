@@ -133,3 +133,16 @@ const productsSlice = createSlice({
 });
 
 // Todo: Persistant State of configuration
+
+import { configurePersistence } from "../storage/persistance"
+
+export const { setSearchQuery, resetProducts, resetSelectedProduct } = productsSlice.actions
+
+// for the persistance
+const persistedProductsReducer = configurePersistence(
+    'products',
+    productsSlice.reducer,
+    ['loading', 'error', 'selectedProduct', 'searchQuery']
+);
+
+export default persistedProductsReducer;

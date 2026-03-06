@@ -1,10 +1,10 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistStore, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from "redux-persist"
-import productsReducer from './productsSlice';
+import persistedProductsReducer from "./productSlice";
 
 
 const rootReducer = combineReducers({
-    products: productsReducer
+    products: persistedProductsReducer
 })
 
 export const store = configureStore({
