@@ -1,6 +1,6 @@
-# Nativee - Professional Product Explorer
+# Product Explorer
 
-Nativee is a high-performance React Native application designed for exploring products via the DummyJSON API. Built with a focus on scalability, performance, and robust state management, this project demonstrates senior-level architectural patterns for mobile development.
+A React Native application designed for exploring products via the DummyJSON API. Built with a focus on scalability, performance, and robust state management, this project demonstrates senior-level architectural patterns for mobile development.
 
 ---
 
